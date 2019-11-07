@@ -17,12 +17,13 @@ class CompanyModelSerializer(serializers.ModelSerializer):
 # Serializer for our sales lead model
 # Note that it incorporates the linked User and Company instance
 class SalesLeadModelSerializer(serializers.ModelSerializer):
-    companyFk = CompanyModelSerializer(many=False)
-    userFk = UserModelSerializer(many=False)
+    # companyFk = CompanyModelSerializer(many=False)
+    # userFk = UserModelSerializer(many=False)
 
     class Meta:
         model = SalesLeadModel
         fields = [
+            'id',
             'name',
             'email',
             'message',

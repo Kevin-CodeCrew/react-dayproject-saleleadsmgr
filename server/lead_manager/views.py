@@ -6,6 +6,7 @@ from .models import UserModel, SalesLeadModel
 from .serializers import SalesLeadModelSerializer
 
 
+# Simple landing page for testing
 def index(req):
     print('Index View')
     return HttpResponse('Sales Lead Landing Page')
